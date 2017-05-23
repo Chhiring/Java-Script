@@ -1,0 +1,23 @@
+//function to create left pyramid of * using given height
+function createLeftPyramid(a){
+    if(typeof a === 'number'){
+      var pyramid =''; //javascript doesnot have inline print option
+      for(var i=a; i>=1; i--){
+        for(var j=1; j<=a; j++ ){
+          if(j>=i){
+            pyramid +="* ";
+          }
+          else{
+            pyramid +="  ";
+          }
+        }
+        console.log(pyramid);
+        pyramid ='';
+        
+      }
+    }
+   else {
+     console.log("not a valid height Please enter the number");
+   }
+}
+createLeftPyramid(5);// call createLeftPyramid function
