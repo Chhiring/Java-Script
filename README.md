@@ -1,2 +1,2 @@
 # Java-Script
-all java script pratice
+all java script console practice file
