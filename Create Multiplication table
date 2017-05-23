@@ -1,0 +1,12 @@
+//function to create multiplication of the given number\
+function multiplicationtable(a){  
+  if(a>0){
+      for (var i=1; i<=10; i++){
+        console.log(a +" * "+i+" = " + a*i);
+      }   
+  }
+  else {
+    console.log("Multiplication number is 0");
+  }
+}
+multiplicationtable(7); // call multiplicationtable function
