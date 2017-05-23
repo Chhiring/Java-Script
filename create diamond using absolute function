@@ -1,0 +1,17 @@
+//another way to create diamond pattern using absolute function
+function diamond(a){
+  for(var i=-a; i<=a; i++){
+    var pattern= "";
+    for(var j=-a; j<=a; j++){
+      if(Math.abs(i)+Math.abs(j)<=a){
+       pattern +="* "; 
+      }
+      else{
+        pattern += "  ";
+      }
+    }
+    console.log(pattern);
+  }
+}
+
+diamond(5);
