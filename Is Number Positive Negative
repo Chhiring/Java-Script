@@ -1,0 +1,16 @@
+// function to check a positive or negative number
+function checknumber(a) {
+    if (typeof a === 'number') {
+        if (a > 0) {
+            console.log("Number is positive " + a);
+        }
+        else {
+            console.log("Number is negative " + a);
+
+        }
+    }
+    else {
+        console.log("not a valid number");
+    }
+}
+checknumber(5);// call checknumber function with number 5
