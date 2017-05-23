@@ -1,0 +1,13 @@
+//function to create inverted left pyramid using given height
+function invertedLeftPyramid(a){
+  var pattern= '';
+  for(var i=a; i>=1; i--){
+    for(var j=1; j<=i; j++){
+      pattern += "* ";
+    }
+   console.log(pattern);
+   pattern = "";
+  }
+}
+//call invertedLeftPyramid functiont to print pyramid
+invertedLeftPyramid(5);
