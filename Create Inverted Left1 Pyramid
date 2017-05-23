@@ -1,5 +1,5 @@
-//function to create inverted right pyramid using given height
-function invertedRightPyramid(a){
+//function to create inverted Left pyramid using given height
+function invertedLeftPyramid(a){
   var pattern = '';
   for(var i=a; i>=1; i--){
     for(var j=a; j>=1; j--){
@@ -14,5 +14,5 @@ function invertedRightPyramid(a){
     pattern='';
   }
 }
-//call invertedRightPyramid function to print pyramid
-invertedRightPyramid(5);
+//call invertedLeftPyramid function to print pyramid
+invertedLeftPyramid(5);
