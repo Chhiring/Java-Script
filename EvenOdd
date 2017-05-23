@@ -1,0 +1,10 @@
+//function to check even or odd number
+function check(num){
+  if(num%2===0){
+    console.log(num +" the number is even");
+  }
+  else{
+    console.log(num +" the number is odd");
+  }
+}
+check(7); // calling check function
