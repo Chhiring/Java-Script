@@ -15,3 +15,12 @@ function diamond(a){
 }
 
 diamond(5);
+
+if we change the condition of if statement it gives different diamond shape
+for ex
+if(Math.abs(i)+Math.abs(j)==a) will give outline of diamond shape
+if(Math.abs(i)+Math.abs(j)>=a) will give daimond with shape empty and outside fill with *
+if(Math.abs(i)==Math.abs(j)) will give cross shape of *
+if(Math.abs(i)>=Math.abs(j)) will give big cross shape check example.
+if(Math.abs(i)<=Math.abs(j)) will give big cross shape check example this is different then above one.
+
