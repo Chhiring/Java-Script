@@ -1,0 +1,15 @@
+/*
+function that reserse the given word
+@input -- takes a single word string
+@output -- return a reverse that word
+pre-condition input must be string
+*/
+function reverseString(a){
+    var stringtoarray=a.split("");
+    var reversearray = stringtoarray.reverse();
+    var reversestring = reversearray.join("");
+    console.log(reversestring);
+}
+//calling reverseWord function
+reverseString("apple");
+reverseString("apple is bad ");
