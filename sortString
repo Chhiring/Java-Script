@@ -1,0 +1,13 @@
+/*function to sort a given string
+@input param a -- it takes single string  
+@output -- prints sorted string
+pre-condition input must be string
+*/
+function sortString(a){
+  var stringtoarray=a.split("");
+  var sortarray= stringtoarray.sort();
+  var sortedstring = sortarray.join("");
+  console.log(sortedstring);
+}
+// calling sortstring function
+sortString("apple");
