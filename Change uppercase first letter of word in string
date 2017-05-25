@@ -1,0 +1,31 @@
+/*
+function that makes first letter uppercase
+@input param str -- takes any string input
+@output prints the string having first letter capital of all word
+pre condition input must be string not number
+*/
+function capitalFirstLetter(str){
+    var strarr = str.split(" ");
+    var upperarr = [];
+    for (var i=0; i< strarr.length; i++){
+      var upper = strarr[i].charAt(0).toUpperCase();
+      upperarr.push(strarr[i].replace(strarr[i].charAt(0),upper));
+    }
+    console.log(upperarr.join(" "));
+}
+//calling capitalFirstletter function
+capitalFirstLetter("this is ram");
+capitalFirstLetter("the boy is cool");
+
+
+//another way to do same thing
+function LetterCapitalize(str) { 
+
+  var arr = str.split(" ");
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  }
+  
+  return arr.join(" ");
+         
+}
