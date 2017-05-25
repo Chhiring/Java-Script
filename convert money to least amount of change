@@ -1,0 +1,73 @@
+/*
+function that convert the money to least amount of change
+@input param money -- takes any positive number 
+@ output -- prints the least amount of change
+pre condition input must be in money format max 2 decimal
+*/
+function convertMoney(money){
+try{
+  if (money === 0){throw "Number is zero";}
+  if (isNaN(money)){throw "This is not a number";}
+  if (money < 0){throw "Number is negative";}
+  money = money.toFixed(2);
+  if(money >= 100){
+    console.log(parseInt((money/100).toString())+" 100$ bill");
+    money = (money%100).toFixed(2);
+  }
+  if(money >= 50){
+    console.log(parseInt((money/50).toString())+" 50$ bill");
+    money = (money%50).toFixed(2);
+  }
+  if(money >= 20){
+    console.log(parseInt((money/20).toString())+ " 20$ bill");
+    money = (money%20).toFixed(2);
+  }
+  if(money >= 10){
+    console.log(parseInt((money/10).toString())+ " 10$ bill");
+    money = (money%10).toFixed(2);
+  }
+  if(money >= 5){
+    console.log(parseInt((money/5).toString())+ " 5$ bill");
+    money = (money%5).toFixed(2);
+  }
+  if(money >= 1){
+    console.log(parseInt((money/1).toString())+" 1$ bill");
+    money = (money%1).toFixed(2);
+  }
+  if(money >= 0.50){
+    console.log(parseInt((money/0.50).toString())+" 50 cents");
+    money = (money%0.5).toFixed(2);
+  }
+  if(money >= 0.25){
+    console.log(parseInt((money/0.25).toString())+ " 25 cents");
+    money = (money%0.25).toFixed(2);
+  }
+  if(money >= 0.20){
+    console.log(parseInt((money/0.20).toString())+ " 20 cents");
+    money = (money%0.2).toFixed(2);
+  }
+  if(money >= 0.10){
+    console.log(parseInt((money/0.10).toString())+" 10 cents");
+    money = (money%0.1).toFixed(2);
+  }
+  if (money >= 0.05){
+    console.log(parseInt((money/0.05).toString())+ " 5 cents");
+    money = (money%0.05).toFixed(2);
+  }
+  if(money >= 0.01){
+    console.log(parseInt((money/0.01).toString())+ " 1 cents");
+    money = (money%0.01).toFixed(2);
+  }
+}
+catch(err){
+  console.log(err + " try again" );
+}
+finally{
+    console.log("Thank you");
+}
+
+}
+//call convermoney function
+convertMoney(12.45);
+convertMoney(1001.56);
+convertMoney(777.8888);
